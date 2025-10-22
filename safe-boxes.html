@@ -1,10 +1,12 @@
+[file name]: safe-boxes.html
+[file content begin]
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe Boxes - GATECH-CO LTD | Premium Security Solutions</title>
-    <meta name="description" content="Discover our complete range of premium safe boxes including small, medium, and large sizes with key lock and combination lock options. Fireproof and waterproof security solutions for Rwanda.">
+    <meta name="description" content="Discover our range of premium safe boxes including small safes for home and office. Fireproof, waterproof, and secure solutions for Rwanda.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -107,210 +109,84 @@
             margin-right: 8px;
         }
 
-        /* Page Header */
-        .page-header {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--dark) 100%);
-            color: white;
+        /* Product Hero Section */
+        .product-hero {
             padding: 4rem 0;
-            text-align: center;
+            background: linear-gradient(135deg, var(--light) 0%, #fff 100%);
         }
 
-        .page-header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            color: white;
-        }
-
-        .page-header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Safe Boxes Catalog */
-        .safes-catalog {
-            padding: 4rem 0;
-            background-color: var(--light);
-        }
-
-        .filter-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            padding: 12px 24px;
-            background: white;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-
-        .filter-btn.active, .filter-btn:hover {
-            background: var(--primary);
-            color: white;
-        }
-
-        .safes-grid {
+        .product-hero-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
         }
 
-        .safe-card {
-            background: white;
+        .product-images {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .main-image {
+            width: 100%;
             border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .safe-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .safe-image {
-            height: 250px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .safe-badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: var(--primary);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .safe-content {
-            padding: 2rem;
-        }
-
-        .safe-content h3 {
+        .product-info h1 {
+            font-size: 2.5rem;
             color: var(--secondary);
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-        }
-
-        .safe-price {
-            font-size: 1.5rem;
-            color: var(--primary);
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .safe-features {
-            list-style: none;
             margin-bottom: 1.5rem;
         }
 
-        .safe-features li {
-            margin-bottom: 0.5rem;
+        .product-price {
+            font-size: 1.8rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .product-features li {
+            margin-bottom: 0.8rem;
             display: flex;
             align-items: center;
-            font-size: 0.9rem;
         }
 
-        .safe-features li i {
+        .product-features li i {
             color: var(--accent);
-            margin-right: 8px;
-            font-size: 0.8rem;
-        }
-
-        .lock-type {
-            display: inline-block;
-            padding: 4px 12px;
-            background: var(--light);
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .lock-type.key {
-            border: 1px solid var(--primary);
-            color: var(--primary);
-        }
-
-        .lock-type.combination {
-            border: 1px solid var(--secondary);
-            color: var(--secondary);
-        }
-
-        /* Comparison Section */
-        .comparison {
-            padding: 4rem 0;
-            background: white;
-        }
-
-        .comparison-table {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            margin-top: 2rem;
-        }
-
-        .comparison-table table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .comparison-table th {
-            background: var(--secondary);
-            color: white;
-            padding: 1.5rem;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        .comparison-table td {
-            padding: 1.2rem 1.5rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .comparison-table tr:nth-child(even) {
-            background: var(--light);
-        }
-
-        .comparison-table .feature-name {
-            font-weight: 600;
-            color: var(--secondary);
+            margin-right: 10px;
         }
 
         /* Button Styles */
         .btn {
             display: inline-flex;
             align-items: center;
-            padding: 12px 24px;
+            padding: 14px 32px;
             background-color: var(--primary);
             color: #fff;
             text-decoration: none;
             border-radius: 6px;
             font-weight: 600;
+            text-transform: uppercase;
             transition: all 0.3s;
             border: none;
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
             box-shadow: 0 4px 15px rgba(195, 43, 43, 0.3);
+            margin-right: 1rem;
+            margin-bottom: 1rem;
         }
 
         .btn i {
-            margin-right: 8px;
+            margin-right: 10px;
+            font-size: 1.1rem;
         }
 
         .btn:hover {
@@ -329,6 +205,131 @@
         .btn-secondary:hover {
             background-color: var(--accent);
             color: var(--dark);
+        }
+
+        /* Specifications Section */
+        .specifications {
+            padding: 4rem 0;
+            background-color: var(--light);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .spec-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .spec-card h3 {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .spec-card h3 i {
+            margin-right: 10px;
+            color: var(--primary);
+        }
+
+        .spec-list {
+            list-style: none;
+        }
+
+        .spec-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .spec-list li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-name {
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .spec-value {
+            color: var(--gray);
+        }
+
+        /* Other Products Section */
+        .other-products {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--secondary);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-content {
+            padding: 1.5rem;
+        }
+
+        .product-content h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-content p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
         }
 
         /* CTA Section */
@@ -388,26 +389,21 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .safes-grid {
+            .product-hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .product-info h1 {
+                font-size: 2rem;
+            }
+
+            .specs-grid {
                 grid-template-columns: 1fr;
             }
 
-            .filter-buttons {
+            .footer-content {
                 flex-direction: column;
-                align-items: center;
-            }
-
-            .filter-btn {
-                width: 200px;
-                text-align: center;
-            }
-
-            .comparison-table {
-                overflow-x: auto;
-            }
-
-            .page-header h1 {
-                font-size: 2.2rem;
             }
         }
     </style>
@@ -429,133 +425,33 @@
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Product Hero Section -->
+    <section class="product-hero">
         <div class="container">
-            <h1>Premium Safe Box Collection</h1>
-            <p>Choose from our complete range of fireproof and waterproof safe boxes for home, office, and commercial use</p>
-        </div>
-    </section>
+            <div class="product-hero-content">
+                <div class="product-images">
+                    <img src="https://i.ibb.co/p6RXDmLj/small-safe.webp" alt="Small Safe Box" class="main-image">
+                </div>
+                <div class="product-info">
+                    <h1>Compact Home Safe Box</h1>
+                    <div class="product-price">RWF 85,000 - 150,000</div>
+                    <p>Perfect for home and small office use, our compact safe box provides reliable security for your valuables, documents, and personal items. Designed with both security and convenience in mind.</p>
+                    
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Fireproof up to 30 minutes at 843°C</li>
+                        <li><i class="fas fa-check"></i> Waterproof protection</li>
+                        <li><i class="fas fa-check"></i> Electronic keypad lock</li>
+                        <li><i class="fas fa-check"></i> Emergency override keys</li>
+                        <li><i class="fas fa-check"></i> Compact size: 30x25x25 cm</li>
+                        <li><i class="fas fa-check"></i> Easy installation</li>
+                    </ul>
 
-    <!-- Safe Boxes Catalog -->
-    <section class="safes-catalog">
-        <div class="container">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All Safes</button>
-                <button class="filter-btn" data-filter="small">Small</button>
-                <button class="filter-btn" data-filter="medium">Medium</button>
-                <button class="filter-btn" data-filter="large">Large</button>
-                <button class="filter-btn" data-filter="key">Key Lock</button>
-                <button class="filter-btn" data-filter="combination">Combination Lock</button>
-            </div>
-
-            <div class="safes-grid">
-                <!-- Small Safe Box -->
-                <div class="safe-card" data-category="small combination">
-                    <div class="safe-image" style="background-image: url('https://i.ibb.co/p6RXDmLj/small-safe.webp');">
-                        <div class="safe-badge">Small</div>
-                    </div>
-                    <div class="safe-content">
-                        <h3>Compact Home Safe</h3>
-                        <div class="safe-price">RWF 85,000 - 200,000</div>
-                        <div class="lock-type combination">Electronic Keypad + Key</div>
-                        <ul class="safe-features">
-                            <li><i class="fas fa-check"></i> Fireproof: 30 minutes at 843°C</li>
-                            <li><i class="fas fa-check"></i> Waterproof protection</li>
-                            <li><i class="fas fa-check"></i> Dimensions: 30x25x25 cm</li>
-                            <li><i class="fas fa-check"></i> Weight: 15 kg</li>
-                            <li><i class="fas fa-check"></i> Perfect for home use</li>
-                        </ul>
+                    <div class="product-actions">
                         <a href="https://wa.me/250788202333?text=Hello%20GATECH-CO%20LTD!%20I'm%20interested%20in%20the%20Compact%20Home%20Safe%20Box." target="_blank" class="btn">
-                            <i class="fab fa-whatsapp"></i> Inquire Now
+                            <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
                         </a>
-                    </div>
-                </div>
-
-                <!-- Medium Safe - Key Lock Only -->
-                <div class="safe-card" data-category="medium key">
-                    <div class="safe-image" style="background-image: url('https://i.ibb.co/svhBh8Gv/image-1693127460747.webp');">
-                        <div class="safe-badge">Medium</div>
-                    </div>
-                    <div class="safe-content">
-                        <h3>Medium Office Safe - Key Lock</h3>
-                        <div class="safe-price">RWF 300,000 - 500,000</div>
-                        <div class="lock-type key">Key Lock Only</div>
-                        <ul class="safe-features">
-                            <li><i class="fas fa-check"></i> Fireproof: 45 minutes at 843°C</li>
-                            <li><i class="fas fa-check"></i> Waterproof protection</li>
-                            <li><i class="fas fa-check"></i> Dimensions: 40x35x35 cm</li>
-                            <li><i class="fas fa-check"></i> Weight: 25 kg</li>
-                            <li><i class="fas fa-check"></i> Ideal for small offices</li>
-                        </ul>
-                        <a href="https://wa.me/250788202333?text=Hello%20GATECH-CO%20LTD!%20I'm%20interested%20in%20the%20Medium%20Office%20Safe%20with%20Key%20Lock." target="_blank" class="btn">
-                            <i class="fab fa-whatsapp"></i> Inquire Now
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Medium Safe - Combination Lock -->
-                <div class="safe-card" data-category="medium combination">
-                    <div class="safe-image" style="background-image: url('https://i.ibb.co/hJCyLBLv/with-combination-lock.jpg');">
-                        <div class="safe-badge">Medium</div>
-                    </div>
-                    <div class="safe-content">
-                        <h3>Medium Office Safe - Combo Lock</h3>
-                        <div class="safe-price">RWF 500,000 - 750,000</div>
-                        <div class="lock-type combination">Electronic Keypad + Key</div>
-                        <ul class="safe-features">
-                            <li><i class="fas fa-check"></i> Fireproof: 45 minutes at 843°C</li>
-                            <li><i class="fas fa-check"></i> Waterproof protection</li>
-                            <li><i class="fas fa-check"></i> Dimensions: 40x35x35 cm</li>
-                            <li><i class="fas fa-check"></i> Weight: 28 kg</li>
-                            <li><i class="fas fa-check"></i> Enhanced security features</li>
-                        </ul>
-                        <a href="https://wa.me/250788202333?text=Hello%20GATECH-CO%20LTD!%20I'm%20interested%20in%20the%20Medium%20Office%20Safe%20with%20Combination%20Lock." target="_blank" class="btn">
-                            <i class="fab fa-whatsapp"></i> Inquire Now
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Large Safe - Combination Lock -->
-                <div class="safe-card" data-category="large combination">
-                    <div class="safe-image" style="background-image: url('https://i.ibb.co/bR5HnQ9V/large-safe.jpg');">
-                        <div class="safe-badge">Large</div>
-                    </div>
-                    <div class="safe-content">
-                        <h3>Large Commercial Safe - Combo Lock</h3>
-                        <div class="safe-price">RWF 1,000,000 - 1,500,000</div>
-                        <div class="lock-type combination">Electronic Keypad + Key</div>
-                        <ul class="safe-features">
-                            <li><i class="fas fa-check"></i> Fireproof: 60 minutes at 843°C</li>
-                            <li><i class="fas fa-check"></i> Waterproof protection</li>
-                            <li><i class="fas fa-check"></i> Dimensions: 60x50x40 cm</li>
-                            <li><i class="fas fa-check"></i> Weight: 45 kg</li>
-                            <li><i class="fas fa-check"></i> Perfect for businesses</li>
-                        </ul>
-                        <a href="https://wa.me/250788202333?text=Hello%20GATECH-CO%20LTD!%20I'm%20interested%20in%20the%20Large%20Commercial%20Safe%20with%20Combination%20Lock." target="_blank" class="btn">
-                            <i class="fab fa-whatsapp"></i> Inquire Now
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Large Safe - Key Lock Only -->
-                <div class="safe-card" data-category="large key">
-                    <div class="safe-image" style="background-image: url('https://i.ibb.co/Zpp6thdP/large-no-combination-lock.jpg');">
-                        <div class="safe-badge">Large</div>
-                    </div>
-                    <div class="safe-content">
-                        <h3>Large Commercial Safe - Key Lock</h3>
-                        <div class="safe-price">RWF 800,000 - 1,300,000</div>
-                        <div class="lock-type key">Key Lock Only</div>
-                        <ul class="safe-features">
-                            <li><i class="fas fa-check"></i> Fireproof: 60 minutes at 843°C</li>
-                            <li><i class="fas fa-check"></i> Waterproof protection</li>
-                            <li><i class="fas fa-check"></i> Dimensions: 60x50x40 cm</li>
-                            <li><i class="fas fa-check"></i> Weight: 42 kg</li>
-                            <li><i class="fas fa-check"></i> Heavy-duty construction</li>
-                        </ul>
-                        <a href="https://wa.me/250788202333?text=Hello%20GATECH-CO%20LTD!%20I'm%20interested%20in%20the%20Large%20Commercial%20Safe%20with%20Key%20Lock." target="_blank" class="btn">
-                            <i class="fab fa-whatsapp"></i> Inquire Now
+                        <a href="tel:+250788202333" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i> Call Now
                         </a>
                     </div>
                 </div>
@@ -563,63 +459,116 @@
         </div>
     </section>
 
-    <!-- Comparison Section -->
-    <section class="comparison">
+    <!-- Specifications Section -->
+    <section class="specifications">
         <div class="container">
             <div class="section-title">
-                <h2>Safe Box Comparison</h2>
-                <p>Compare features to find the perfect safe for your needs</p>
+                <h2>Technical Specifications</h2>
+                <p>Detailed specifications of our compact home safe box</p>
             </div>
             
-            <div class="comparison-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th>Small Safe</th>
-                            <th>Medium Safe</th>
-                            <th>Large Safe</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="feature-name">Dimensions</td>
-                            <td>30x25x25 cm</td>
-                            <td>40x35x35 cm</td>
-                            <td>60x50x40 cm</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Weight</td>
-                            <td>15 kg</td>
-                            <td>25-28 kg</td>
-                            <td>42-45 kg</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Fire Rating</td>
-                            <td>30 minutes</td>
-                            <td>45 minutes</td>
-                            <td>60 minutes</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Lock Options</td>
-                            <td>Combo + Key</td>
-                            <td>Key or Combo + Key</td>
-                            <td>Key or Combo + Key</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Best For</td>
-                            <td>Home Use</td>
-                            <td>Small Offices</td>
-                            <td>Businesses</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Price Range</td>
-                            <td>RWF 85K-200K</td>
-                            <td>RWF 300K-750K</td>
-                            <td>RWF 800K-1.5M</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3><i class="fas fa-ruler"></i> Dimensions & Weight</h3>
+                    <ul class="spec-list">
+                        <li>
+                            <span class="spec-name">External Dimensions</span>
+                            <span class="spec-value">30 x 25 x 25 cm</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Internal Dimensions</span>
+                            <span class="spec-value">28 x 23 x 23 cm</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Weight</span>
+                            <span class="spec-value">15 kg</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Color</span>
+                            <span class="spec-value">Grey / Black</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="spec-card">
+                    <h3><i class="fas fa-shield-alt"></i> Security Features</h3>
+                    <ul class="spec-list">
+                        <li>
+                            <span class="spec-name">Lock Type</span>
+                            <span class="spec-value">Electronic Keypad</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Fire Rating</span>
+                            <span class="spec-value">30 minutes at 843°C</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Waterproof</span>
+                            <span class="spec-value">Yes</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Emergency Keys</span>
+                            <span class="spec-value">2 override keys</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="spec-card">
+                    <h3><i class="fas fa-cube"></i> Storage Capacity</h3>
+                    <ul class="spec-list">
+                        <li>
+                            <span class="spec-name">Cash Capacity</span>
+                            <span class="spec-value">Up to RWF 5,000,000</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Document Storage</span>
+                            <span class="spec-value">A4 folders</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Jewelry</span>
+                            <span class="spec-value">Small valuables</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Shelf</span>
+                            <span class="spec-value">Removable shelf included</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Products Section -->
+    <section class="other-products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Other Safe Box Models</h2>
+                <p>Explore our complete range of security solutions</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.ibb.co/S7c6xgMc/860.jpg');"></div>
+                    <div class="product-content">
+                        <h3>Medium Office Safe</h3>
+                        <p>Larger capacity safe perfect for small businesses and offices with enhanced security features.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://i.ibb.co/p6RXDmLj/small-safe.webp');"></div>
+                    <div class="product-content">
+                        <h3>Compact Home Safe</h3>
+                        <p>Perfect for home use with fireproof and waterproof protection for your valuables.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);"></div>
+                    <div class="product-content">
+                        <h3>Wall Safe</h3>
+                        <p>Discreet wall-mounted safe for hidden security solutions in homes and offices.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -627,8 +576,8 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Need Help Choosing the Right Safe?</h2>
-            <p>Our security experts will help you select the perfect safe box for your specific needs and budget</p>
+            <h2>Ready to Secure Your Valuables?</h2>
+            <p>Contact us today for a free consultation and professional installation service</p>
             <a href="https://wa.me/250788202333" target="_blank" class="btn">
                 <i class="fab fa-whatsapp"></i> Get Free Consultation
             </a>
@@ -660,36 +609,9 @@
     </footer>
 
     <script>
-        // Filter functionality
+        // Simple form handling for demonstration
         document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const safeCards = document.querySelectorAll('.safe-card');
-
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Add active class to clicked button
-                    button.classList.add('active');
-
-                    const filter = button.getAttribute('data-filter');
-
-                    safeCards.forEach(card => {
-                        if (filter === 'all') {
-                            card.style.display = 'block';
-                        } else {
-                            const categories = card.getAttribute('data-category').split(' ');
-                            if (categories.includes(filter)) {
-                                card.style.display = 'block';
-                            } else {
-                                card.style.display = 'none';
-                            }
-                        }
-                    });
-                });
-            });
-
-            // Smooth scrolling for anchor links
+            // Add smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -706,3 +628,4 @@
     </script>
 </body>
 </html>
+[file content end]
